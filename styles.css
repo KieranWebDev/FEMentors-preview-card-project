@@ -78,7 +78,6 @@ p,
   margin-bottom: 0.2rem;
 }
 .data-description {
-  line-height: 32px;
   font-family: 'Lexend Deca';
   font-size: 0.8rem;
   line-height: 25px;
@@ -86,10 +85,10 @@ p,
   text-transform: uppercase;
   opacity: 0.6;
   font-size: 12px;
-  margin-bottom: 0.2rem;
 }
-.data-description:last-child {
-  margin-bottom: 0;
+
+.data-container {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -97,7 +96,6 @@ p,
     height: 100vh;
   }
   .card-container {
-    background-color: var(--background-card);
     max-width: 1130px;
     height: 450px;
     border-radius: 8px;
@@ -121,19 +119,33 @@ p,
   }
 
   .text h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 44px;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .data-flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 4rem;
+    gap: 3rem;
   }
+  /* .data-flex-container:last-child {
+    margin-right: 3rem;
+  } */
   .text span,
   .text p {
     text-align: left;
+  }
+}
+@media (max-width: 1000px) {
+  .text {
+    padding: 4rem 2rem;
+  }
+  .data-flex-container {
+    justify-content: flex-start;
+    margin-top: 4rem;
+    gap: 3rem;
   }
 }
