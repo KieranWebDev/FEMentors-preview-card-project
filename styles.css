@@ -123,11 +123,13 @@ p,
   .text h1 {
     font-size: 2rem;
     line-height: 44px;
+    text-align: left;
+    margin-bottom: 1rem;
   }
 
   .data-flex-container {
-    display: inline-block;
-    /* justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
     margin-top: 4rem;
   }
   .text span,
